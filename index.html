@@ -214,9 +214,9 @@
            Welcome to Explore with Ease - Tours and travels, where your dream adventures come to life! Discover breathtaking destinations known for their stunning mountains, crystal-clear rivers, serene lakes, and picturesque snow capped landscapes. Let us guide you through the beauty of nature. Explore the world with ease and create memories that last a lifetime!
 
           <div class="btn-group">
-            <!-- <a href="https://en.wikipedia.org/wiki/Kashmir"><button class="btn btn-primary">Learn more</button></a> -->
+            <a ><button class="btn btn-primary" onclick="showPopup()">Book Now</button></a>
             
-            <a><button class="btn btn-secondary" onclick="showPopup()">Book now</button>
+            <a href="tel: 7780854483"><button class="btn btn-secondary" >Call now</button>
             </a>
           </div>
 
@@ -1682,7 +1682,7 @@
             </p>
           </div>
 
-          <button class="btn btn-secondary">Contact Us !</button>
+          <a href="tel: 7780854483"><button class="btn btn-secondary">Contact Us!</button></a>
 
         </div>
       </section>
@@ -1750,13 +1750,13 @@
         <div class="footer-form">
 
           <p class="form-text">
-            Subscribe our newsletter for more update & news !!
+            We Value Your Feedback !!
           </p>
 
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+          <form id="FeedbackForm" class="form-wrapper">
+            <input type="text" name="feedback" class="input-field" placeholder="Enter Your Feedback" required>
 
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
+            <button type="submit" class="btn btn-secondary">Submit</button>
           </form>
 
         </div>
@@ -1819,6 +1819,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
 
 <script>
     function showPopup() {
@@ -1838,7 +1840,7 @@
 
     //dddd
     (function() {
-        emailjs.init("LOzllA2r_6YMSc6cP"); // Replace with your EmailJS user ID
+        emailjs.init("LOzllA2r_6YMSc6cP"); 
     })();
     
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
@@ -1860,6 +1862,29 @@
                 alert('Failed to book: ' + JSON.stringify(error));
             });
     });
+    (function() {
+        emailjs.init("LOzllA2r_6YMSc6cP"); 
+    })();
+    
+    document.getElementById('FeedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    
+    // const feedback = document.getElementById('feedback').value;
+
+    // const templateParams = {
+    //     feedback: feedback
+    // };
+
+    emailjs.sendForm('service_2lf6ml7', 'template_vo6qwph', this)
+    .then(function() {
+      alert('Thank you for your feedback!');  
+      document.getElementById('FeedbackForm').reset();   
+            
+     }, function(error) {
+        alert('Failed to book: ' + JSON.stringify(error));
+    });
+});
 </script>
 </body>
 
