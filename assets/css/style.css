@@ -1428,7 +1428,7 @@ address {
     --section-padding: 100px;
 
   }
-
+ 
 
 
   /**
@@ -1453,6 +1453,6 @@ address {
     background-color: hsla(0, 0%, 0%,0.5);
   }
   .header-bottom .container{
-    margin-top: 25px;
+    margin-top: 40px;
   }
 }

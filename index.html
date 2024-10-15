@@ -42,7 +42,7 @@
             <label for="phone">Phone Number:</label>
             <input type="text" id="phone" placeholder="Phone Number" name="phone" maxlength="10" required>
             <label for="Discription">Discription:</label>
-            <input type="text" id="name" placeholder="Discription about travel" name="name" required>
+            <input type="text" id="discription" placeholder="Discription about travel" name="discription" required>
             <label for="destination">Destination:  (*optional)</label>
             <select id="destination" name="destination" required>
                 <option value="Not decided yet" >Select a destination</option>
@@ -59,6 +59,13 @@
                 <option value="Verinag">Verinag</option>
                 <option value="Keran Valley">Keran Valley</option>
                 <option value="Warwan Valley ">Warwan Valley </option>
+
+                <option value="Gurez Valley">Hotels</option>
+                <option value="Doodhpathri">Mughal Garden Package </option>
+                <option value="Aharbal Waterfall">Honeymoon Package</option>
+                <option value="Verinag">Leh Ladakh Package</option>
+                <option value="Keran Valley">Mata Vaishno Devi </option>
+                <option value="Warwan Valley ">Adventure Spors package </option>
             </select>
             
             <button type="submit" class="submit-button">Book Now</button>
@@ -95,7 +102,7 @@
         <a href="#" class="logo">
           <!-- <h3 class="title1" style="color: rgb(228, 247, 225); font-family:Anton, sans-serif; font-size: 22px; text-align: center; font-weight: 100;"><span class="material-symbols-outlined"> -->
             
-          <img class="mainlogo" height="35px" src="logo.png" alt="Explore With Ease">
+          <img class="mainlogo" height="50px" src="logo.png" alt="Explore With Ease">
         </a>
 
         <div class="header-btn-group">
@@ -1738,7 +1745,7 @@
             <li class="contact-item">
               <ion-icon name="mail-outline"></ion-icon>
 
-              <a href="mailto:info.tourly.com" class="contact-link">explorewitheasetravels@gmail.com</a>
+              <a href="mailto:explorewitheasetravels@gmail.com" class="contact-link">explorewitheasetravels@gmail.com</a>
             </li>
 
             <li class="contact-item">
@@ -1844,7 +1851,7 @@
 
     //dddd
     (function() {
-        emailjs.init("LOzllA2r_6YMSc6cP"); 
+        emailjs.init("4TaIoYYl1EjSxPhMJ"); 
     })();
     
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
@@ -1857,7 +1864,7 @@
         // const phone = document.getElementById('phone').value;
         // const destination = document.getElementById('destination').value;
 
-        emailjs.sendForm('service_2lf6ml7', 'template_onxxuut', this)
+        emailjs.sendForm('service_8nresww', 'template_oj1utk6', this)
 
             .then(function() {
                 alert('Booking done successfully!');
@@ -1868,7 +1875,7 @@
             });
     });
     (function() {
-        emailjs.init("LOzllA2r_6YMSc6cP"); 
+        emailjs.init("4TaIoYYl1EjSxPhMJ"); 
     })();
     
     document.getElementById('FeedbackForm').addEventListener('submit', function(event) {
@@ -1881,7 +1888,7 @@
     //     feedback: feedback
     // };
 
-    emailjs.sendForm('service_2lf6ml7', 'template_vo6qwph', this)
+    emailjs.sendForm('service_8nresww', 'template_whmaead', this)
     .then(function() {
       alert('Thank you for your feedback!');  
       document.getElementById('FeedbackForm').reset();   
