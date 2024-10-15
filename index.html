@@ -34,15 +34,18 @@
 <body id="top">
   <div class="popup" id="popup">
     <div class="popup-content">
-        <h2 style="text-decoration: underline; color: rgb(54, 51, 51);">Booking Form</h2>
+      <span class="close-button" onclick="closePopup()"><img src="/assets/images/close.png" alt="" height="30px"></span>
+        <h2 style="text-decoration: underline; color: rgb(54, 51, 51); margin-bottom: 30px;">Booking Form..</h2>
         <form id="bookingForm">
             <label for="name">Name:</label>
             <input type="text" id="name" placeholder="Name" name="name" required>
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" placeholder="Phone Number" name="phone" required>
-            <label for="destination">Destination:</label>
+            <input type="text" id="phone" placeholder="Phone Number" name="phone" maxlength="10" required>
+            <label for="Discription">Discription:</label>
+            <input type="text" id="name" placeholder="Discription about travel" name="name" required>
+            <label for="destination">Destination:  (*optional)</label>
             <select id="destination" name="destination" required>
-                <option value="" disabled selected>Select a destination</option>
+                <option value="Not decided yet" >Select a destination</option>
                 <option value="Pahalgham">Pahalgham</option>
                 <option value="Dal Lake">Dal Lake</option>
                 <option value="Gulmarg">Gulmarg</option>
@@ -57,9 +60,10 @@
                 <option value="Keran Valley">Keran Valley</option>
                 <option value="Warwan Valley ">Warwan Valley </option>
             </select>
+            
             <button type="submit" class="submit-button">Book Now</button>
         </form>
-        <span class="close-button" onclick="closePopup()">Close</span>
+       
     </div>
 </div>
 
@@ -186,7 +190,7 @@
           </ul>
 
         </nav>
-        <a> <button class="btn btn-primary" onclick="showPopup()" style="background-color: rgb(16, 99, 16); border-color: rgb(16, 99, 16);">Book Now</button>
+        <a> <button class="btn btn-primary" onclick="showPopup()" style="background-color: rgb(16, 99, 16); border-color: rgb(16, 99, 16); font-size: 14px;">Get A Quote</button>
         </a>
 
       </div>
@@ -214,9 +218,9 @@
            Welcome to Explore with Ease - Tours and travels, where your dream adventures come to life! Discover breathtaking destinations known for their stunning mountains, crystal-clear rivers, serene lakes, and picturesque snow capped landscapes. Let us guide you through the beauty of nature. Explore the world with ease and create memories that last a lifetime!
 
           <div class="btn-group">
-            <a ><button class="btn btn-primary" onclick="showPopup()">Book Now</button></a>
+            <a ><button class="btn btn-primary" onclick="showPopup()">Get A Quote</button></a>
             
-            <a href="tel: 7780854483"><button class="btn btn-secondary" >Call now</button>
+            <a href="tel: 7780854483"><button class="btn btn-secondary" >book now</button>
             </a>
           </div>
 
@@ -1844,6 +1848,7 @@
     })();
     
     document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      
         event.preventDefault();
         const submitButton = this.querySelector('.submit-button');
         submitButton.disabled = true; // Disable the button

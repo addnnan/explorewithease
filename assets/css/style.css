@@ -113,6 +113,7 @@ button {
   background: none;
   border: none;
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 button { cursor: pointer; }
@@ -417,6 +418,7 @@ body { background: var(--white); }
 .hero-text {
   color: var(--white);
   font-size: var(--fs-5);
+  /* font-size: 20px; */
   margin-bottom: 40px;
 }
 
@@ -507,8 +509,11 @@ body {
   align-items: center;
 }
 .popup-content {
+  padding-top:0px;
   background-color: white;
-  padding: 40px ;
+  /* padding: 40px ; */
+  padding-right: 40px;
+  padding-left: 40px;
   padding-bottom: 50px;
   border-radius: 10px;
   width: 350px;
@@ -549,15 +554,17 @@ label {
   width: 100%;
 }
 .close-button {
-
-  margin-bottom: 20px;
+  /* text-align: center; */
+  /* height:15px; */
+  margin-left: auto;
+  margin-bottom: 10px;
   padding: 14px;
-  background-color: #f13c2f;
-  color: white;
-  border: none;
-  border-radius: 5px;
+  /* color: white; */
+  /* border: none; */
+  /* border-radius: 95px; */
   cursor: pointer;
-  width: 100%;
+  width: 15px;
+  
 
 }
 
