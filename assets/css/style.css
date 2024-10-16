@@ -345,14 +345,15 @@ body { background: var(--white); }
 }
 
 .navbar-top {
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 15px;
-  background-color: rgba(0, 0, 255, 0.11);
+  background-color: rgba(158, 158, 177, 0.2);
 }
 
-.navbar-top  img { width: 200px; }
+.navbar-top  img { width: 150px; height: 40px; }
 
 .nav-close-btn {
   font-size: 20px;
