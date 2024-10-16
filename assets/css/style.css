@@ -1444,17 +1444,25 @@ address {
 }
 
 @media (min-width:410px){
-
+  .logo{
+    transform: scale(0.8);
+  }
+  .logo-heading{
+    font-size: 12px;
+  }
+  .logo-slogan{
+    font-size: 10px;
+  }
   .mainlogo{
     margin-top: 10px;
     margin-bottom: 10px;
     object-fit: contain;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   .hero{
     background-color: hsla(0, 0%, 0%,0.5);
   }
   .header-bottom .container{
-    margin-top: 40px;
+    margin-top: 30px;
   }
 }
