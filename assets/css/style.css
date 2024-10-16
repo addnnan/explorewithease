@@ -349,9 +349,10 @@ body { background: var(--white); }
   justify-content: space-between;
   align-items: center;
   padding: 40px 15px;
+  background-color: rgba(0, 0, 255, 0.11);
 }
 
-.navbar-top .logo img { width: 150px; }
+.navbar-top  img { width: 200px; }
 
 .nav-close-btn {
   font-size: 20px;
@@ -1447,7 +1448,7 @@ address {
     margin-top: 10px;
     margin-bottom: 10px;
     object-fit: contain;
-    transform: scale(2);
+    transform: scale(1.8);
   }
   .hero{
     background-color: hsla(0, 0%, 0%,0.5);
