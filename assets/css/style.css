@@ -239,7 +239,7 @@ body { background: var(--white); }
 }
 
 .header-top {
- 
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -1470,6 +1470,7 @@ address {
   }
   .hero{
     background-color: hsla(0, 0%, 0%,0.5);
+    /* padding-top: 30px; */
   }
   .header-bottom .container{
     margin-top: 30px;
