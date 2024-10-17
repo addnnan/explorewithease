@@ -350,7 +350,7 @@ body { background: var(--white); }
   justify-content: space-between;
   align-items: center;
   padding: 40px 15px;
-  background-color: rgba(158, 158, 177, 0.2);
+  background-color: rgba(80, 80, 241, 0.158);
 }
 
 .navbar-top  img { width: 150px; height: 40px; }
@@ -367,7 +367,7 @@ body { background: var(--white); }
 .navbar-list li { border-bottom: 1px solid hsla(0, 0%, 0%, 0.1); }
 
 .navbar-link {
-  font-size: 12px;
+  font-size: 16px;
   padding: 15px 20px;
   color: var(--jet);
   font-weight: var(--fw-500);
@@ -876,8 +876,10 @@ address {
 .contact-link:is(:hover, :focus) { color: var(--white); }
 
 .form-text {
-  font-size: var(--fs-5);
+  font-size:16px;
   margin-bottom: 20px;
+  text-decoration: underline;
+  padding: 6px;
 }
 
 .footer-form .input-field {
@@ -1154,7 +1156,7 @@ address {
    * HEADER
    */
   .navbar-link{
-    font-size: 11px;
+    font-size: 14px;
   }
   .helpline-box {
     display: flex;
@@ -1361,7 +1363,10 @@ address {
     grid-column: unset;
     margin-top: 0;
   }
-
+  .mlogo{
+    margin-left: 50px;
+    transform: scale(1);
+  }
 
 
   /**
@@ -1430,6 +1435,10 @@ address {
     --section-padding: 100px;
 
   }
+  .mlogo{
+    margin-left: 50px;
+    transform: scale(1);
+  }
  
 
 
@@ -1444,11 +1453,11 @@ address {
 }
 
 @media (min-width:410px){
-  .logo{
+  .mlogo{
     transform: scale(0.8);
   }
   .logo-heading{
-    font-size: 12px;
+    font-size: 10px;
   }
   .logo-slogan{
     font-size: 10px;
@@ -1457,7 +1466,7 @@ address {
     margin-top: 10px;
     margin-bottom: 10px;
     object-fit: contain;
-    transform: scale(1.2);
+    transform: scale(1.4);
   }
   .hero{
     background-color: hsla(0, 0%, 0%,0.5);

@@ -44,3 +44,7 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+window.onload = function() {
+  document.getElementById('bookingForm').reset();
+};
