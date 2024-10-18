@@ -1773,7 +1773,7 @@
           <form id="FeedbackForm" class="form-wrapper">
             <input type="text" name="feedback" class="input-field" placeholder="Enter Your Feedback" required>
 
-            <button type="submit" class="btn btn-secondary">Submit</button>
+            <button type="submit" class="btn btn-secondary" id="feedback-submit">Submit</button>
           </form>
 
         </div>
@@ -1893,9 +1893,12 @@
     // const templateParams = {
     //     feedback: feedback
     // };
+    const feedbackButton = document.getElementById('feedback-submit');
 
     emailjs.sendForm('service_8nresww', 'template_whmaead', this)
     .then(function() {
+      feedbackButton.disabled = true;
+      feedbackButton.innerText = 'Submitted'; 
       alert('Thank you for your feedback!');  
       document.getElementById('FeedbackForm').reset();   
             
