@@ -1441,8 +1441,11 @@ address {
     margin-left: 50px;
     transform: scale(1);
   }
- 
 
+  .mainlogo{
+    transform: scale(4);
+    height: 50px;
+  }
 
   /**
    * REUSED STYLE
