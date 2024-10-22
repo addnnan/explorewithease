@@ -211,6 +211,8 @@ body { background: var(--white); }
 }
 
 .card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: var(--black-coral);
   font-size: var(--fs-5);
 }
@@ -599,6 +601,10 @@ label {
 }
 
 .popular-card .card-content {
+  height: 140; /* Adjust the height as needed */
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
+
   position: absolute;
   bottom: 20px;
   left: 20px;
