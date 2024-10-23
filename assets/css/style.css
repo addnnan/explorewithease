@@ -649,7 +649,7 @@ label {
   background-image: url('/assets/images/cars.gif'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
-  padding: 30px;
+  padding: 26px;
   border-radius: 10px;
   color: white;
   text-align: center;
@@ -1533,7 +1533,7 @@ address {
     margin-top: 42px;
   }
   .cab-services {
-    width: 411px;
+    width: 410px;
   }
 
 
