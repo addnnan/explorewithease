@@ -658,7 +658,7 @@ label {
   width: 600px;
   margin: auto;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: overlay;
   
 }
