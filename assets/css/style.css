@@ -643,6 +643,52 @@ label {
 
 .popular .btn { margin-inline: auto; }
 
+.cab-services {
+  
+  position: relative;
+  background-image: url('/assets/images/cars.gif'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  max-width: 500px;
+  width: 600px;
+  margin: auto;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for stronger effect */
+  border-radius: 10px;
+  z-index: 1;
+}
+.cab-services h2, .cab-services p {
+  position: relative;
+  z-index: 2; /* Ensure text is above overlay */
+}
+
+.cab-services h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e1f2ff;
+  text-decoration: underline;
+  padding: 12px;
+}
+
+.cab-services p {
+  font-size: 16px;
+  margin: 5px 0;
+}
 
 
 
@@ -1485,6 +1531,9 @@ address {
   }
   .header-bottom .container{
     margin-top: 42px;
+  }
+  .cab-services {
+    width: 411px;
   }
 
 
