@@ -644,18 +644,17 @@ label {
 .popular .btn { margin-inline: auto; }
 
 .cab-services {
-  
   position: relative;
   background-image: url('/assets/images/cars.gif'); /* Replace with your image URL */
   background-size: cover;
   background-position: center;
   padding: 26px;
-  border-radius: 10px;
+  border-radius: 20px;
   color: white;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  max-width: 500px;
-  width: 600px;
+  /* max-width: 500px; */
+  width: 500px;
   margin: auto;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.5);
@@ -683,6 +682,9 @@ label {
   color: #e1f2ff;
   text-decoration: underline;
   padding: 12px;
+  font-family: Overlock, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 .cab-services p {
@@ -1543,5 +1545,8 @@ address {
 @media (min-width:580px){
   .header{
     padding-top: 55px;
+  }
+  .cab-services {
+    width: 700px;
   }
 }
