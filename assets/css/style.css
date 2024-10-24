@@ -632,7 +632,7 @@ label {
 }
 
 .modal {
-  display: none; /* Hidden by default */
+  display: block; /* Hidden by default */
   position: fixed;
   z-index: 1000;
   left: 0;
@@ -651,8 +651,14 @@ label {
 }
 
 .modal-content {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
   background-color: #fff;
-  margin: 6% auto;
+  /* margin: 5% auto; */
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
@@ -1547,6 +1553,7 @@ address {
   }
   .container { max-width: 1180px; }
 
+
 }
 
 @media (min-width:410px){
@@ -1576,13 +1583,6 @@ address {
     width: 400px;
     padding: 22px;
   }
-  .modal-content {
-    margin: 38% auto;
-    height: 600px;
-  }
-  .modal-main{
-    height: "280px";
-  }
 
 
 
@@ -1595,8 +1595,5 @@ address {
   .cab-services {
     width: 700px;
     
-  }
-  .modal-content {
-    margin: 15% auto;
   }
 }
