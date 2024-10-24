@@ -391,7 +391,7 @@ body { background: var(--white); }
 }
 
 .overlay.active {
-  opacity: 0.7;
+  opacity: 0.8;
   pointer-events: all;
 }
 
@@ -415,6 +415,7 @@ body { background: var(--white); }
   min-height: 600px;
   text-align: center;
   padding-top: 120px;
+
 }
 
 .hero-title { margin-bottom: 20px; }
@@ -630,6 +631,43 @@ label {
   font-size: 14px;
 }
 
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 6% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+}
+
 .popular-card .card-subtitle {
   color: var(--blue-ncs);
   font-size: var(--fs-6);
@@ -662,14 +700,14 @@ label {
   
 }
 .overlay {
-  position: absolute;
+  /* position: absolute; */
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for stronger effect */
-  border-radius: 10px;
-  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8); /* Increased opacity for stronger effect */
+  /* border-radius: 10px; */
+  z-index: 2;
 }
 .cab-services h2, .cab-services p {
   position: relative;
@@ -1536,6 +1574,7 @@ address {
   }
   .cab-services {
     width: 400px;
+    padding: 22px;
   }
 
 
@@ -1548,5 +1587,6 @@ address {
   }
   .cab-services {
     width: 700px;
+    
   }
 }
