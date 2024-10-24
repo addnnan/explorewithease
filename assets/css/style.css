@@ -658,7 +658,7 @@ label {
   width: 80%;
   max-width: 600px;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .close {
@@ -1576,6 +1576,9 @@ address {
     width: 400px;
     padding: 22px;
   }
+  .modal-content {
+    margin: 15% auto;
+  }
 
 
 
@@ -1588,5 +1591,8 @@ address {
   .cab-services {
     width: 700px;
     
+  }
+  .modal-content {
+    margin: 15% auto;
   }
 }
