@@ -1597,3 +1597,35 @@ address {
     
   }
 }
+@media (max-width:409px){
+  .mainlogo{
+    transform: scale(2.5);
+  }
+  .mlogo{
+    transform: scale(0.6);
+    
+    
+  }
+  .header{
+    padding-top: 60px;
+  }
+  .nav-open-btn{
+   transform: translateX(-22px);
+  }
+  #top-container{
+    justify-content:center;
+    
+  }
+  .helpline-box{
+    transform: translateX(22px);
+  }
+  .cab-services{
+    width: 100%;
+    transform: scale(1);
+  }
+  .container{
+    width: 100%;
+    /* transform: scale(0.8); */
+    transform-origin: top left;
+  }
+}
