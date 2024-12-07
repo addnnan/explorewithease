@@ -1558,7 +1558,7 @@ address {
 
 @media (min-width:410px){
   .mlogo{
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   .logo-heading{
     font-size: 10px;
